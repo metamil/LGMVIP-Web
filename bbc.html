@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <title>bbc.com</title>
+        
+        <style type="text/css">
+            
+            #topbar{
+                
+                width:1000px;
+                height:40px;
+                background:white;
+                margin:0 auto;
+                
+            }
+            
+            body{
+                margin:0;
+                padding: 0;
+                font-family: sans-serif;
+            }
+            
+            #logo{
+                margin-top:8px;
+                margin-right: 8px;
+                width:100px;
+                float:left;
+            }
+            
+            .sign_id{
+            
+            
+                border-left:1px #CCCCCC solid;
+                height:100%;
+                float:left;
+                border-right: 8px;
+                
+                
+            }
+            #sign{
+                height:25px;
+                margin-left:15px;
+                margin-top: 8px;
+                margin-right:5px;
+                float:left;
+                 
+            }
+            
+            #sig_text{
+               
+                font-weight: bold;
+                font-size:50%;
+                float: left;
+                font-size:90%;
+                position : relative;
+                top:11px;
+               
+                
+            }
+            
+            #bellid{
+                border-left:1px #CCCCCC solid;
+                height:100%;
+                float:left;
+                margin-left: 5px;
+            }
+            
+            #bell{
+                height:25px;
+                margin-left: 15px;
+                margin-top:6px;
+                
+            }
+            
+            .topbar_menu{
+                border-left:1px #CCCCCC solid;
+                margin-left:15px;
+                height:100%;
+                float:left;
+                font-weight:bold;
+                font-size:80%;
+                padding-left:10px;
+                
+               
+                
+                
+            }
+            
+            #sport_text{
+                
+                 margin-left:5px;
+                margin-top:7px;
+                
+                
+            }
+            
+            .search{
+                border-left:1px #CCCCCC solid;
+                height : 100%;
+                float: left;
+                margin-left:15px;
+                
+                    
+                
+            }
+            
+            #searchbar{
+                background: #E4E4E4;
+                border-width: 0px;
+                margin-left: 20px;
+                margin-top: 8px;
+                font-weight: bold;
+                padding:5px;
+                float: left;
+            }
+            
+            
+            #slogo{
+                position:relative;
+                top:10px;
+                height:20px;
+                left:-25px;
+                background:black;
+            }
+            
+            .clear{
+                clear: both;
+            }
+            
+            #menubar{
+                
+                background:#BB1919 ;
+                height : 100px;
+                width : 100%;
+            }
+            #news{
+                margin:auto;
+                padding-top:10px;
+                padding-left:15px;
+                color: white;
+                font-size:40px;
+                font-weight:normal;
+                
+            }
+            
+            #location_search{
+                position:relative;
+                float:right;
+                top:-35px;
+                right:50px;
+            }
+            
+           #mennu a{
+                text-decoration: none;
+                border-right:1px white solid;
+                position:relative;
+                margin-right:10px;
+                margin-left:5px;
+                padding:0 15px;
+                color:white;
+                float:left;
+                font-size:12px;
+                top:10px;
+                
+                
+                
+            }
+            
+            #mennu a:hover{
+                text-decoration: underline;
+                
+            }
+            
+            
+            #menu-2{
+              
+            
+                width:1000px;
+                margin:0 auto;
+                
+            
+            }
+            
+            #page_container{
+                
+                width:1000px;
+                margin:0 auto;
+                
+            
+                
+            }
+            
+            
+            #tech{
+                font-size:20px;
+                font-style: normal;
+                border-bottom: 3px red solid;
+                width:140px;
+            }
+            
+            #link{
+                text-decoration: none;
+                font-weight : bold;
+                color:black;
+                
+            }
+            
+            #link:hover{
+                color:blue;
+            }
+            
+            #article-container{
+                width:700px;
+                margin-top:40px;
+                
+                
+            }
+            
+            #article-summary{
+                color:#5a5a5a;
+                width:260px;
+                float:left;
+                
+                
+            }
+            #clock{
+                width:13px;
+                position: relative;
+                top:1px;
+            }
+
+            
+            #article-summary a{
+                text-decoration:none;
+                color:blue;
+                border-left:1.3px solid #CCCCCC;
+                padding-left: 5px;
+            }
+            
+            #artice-summary a:hover{
+                border-bottom: 2px white solid;
+            }
+            
+            #port_img{
+                width:400px;
+                margin-left:30px;
+                
+                
+            
+                
+            }
+            
+            #other{
+                width:300px;
+                height:100%;
+                border : 1px solid black;
+                float:right;
+                position: absolute;
+                top:220px;
+                right:100px;
+                padding:10px;
+                
+            
+            }
+            #other p{
+                border-bottom: 1px solid grey;
+                margin-bottom:10px;
+                
+            }
+            
+            #other a{
+                text-decoration: none;
+                font-weight: bold;
+                font-size: 18x;
+                color: black;
+            
+            }
+            
+            #other a:hover{
+                color: cadetblue;
+                text-decoration: underline;
+            }
+            
+            .time{
+                margin-top:50px;
+                font-size: 12px;
+                color: grey;
+            }
+            
+        </style>
+    
+    </head>
+
+    
+    <body>
+    
+      <div id="topbar">
+          
+          
+          <img id="logo" src="images/bbc-blocks-dark.png">
+          
+          <div class="sign_id">
+              
+              <img id="sign" src="images/sign_in.jpg">
+              <span id="sig_text">Sign in</span>
+              
+          
+          
+          </div>
+          
+          <div id="bellid">
+          <img id ="bell" src="images/bell1.png">
+         </div>
+          
+          
+          <div class="topbar_menu">
+              <p>News</p>  
+          </div>
+          
+          <div class="topbar_menu">
+              <p>sports</p>  
+          </div>
+          
+          <div class="topbar_menu">
+              <p>Weather</p>  
+          </div>
+          
+          <div class="topbar_menu">
+              <p>TV</p>  
+          </div>
+          
+          <div class="topbar_menu">
+              <p>Radio</p>  
+          </div>
+          
+          <div class="topbar_menu">
+              <p>More</p>  
+          </div>
+          
+          
+          <div class="search">
+              
+              <input id="searchbar" type="text" value="Search">
+              <input id="slogo" src = "images/search.png" type=image>
+          
+          </div>
+          
+          <div class="clear"></div>
+        </div>
+          
+          <div id="menubar">
+              <div>
+                  <h1 id="news">NEWS</h1>
+              </div>
+              
+              <div id="location_search">
+                  
+                  
+              
+              </div>
+    
+              <div id="menu-2">
+                  
+                  <div id="mennu">
+              
+              <div class="menu-elements">
+                  <a href="https://www.bbc.com/news">Home</a>
+              </div>
+              
+              <div class="menu-elements">
+                  <a href="https://www.bbc.com/news/coronavirus ">CoronaVirus</a>
+              </div>
+              
+              
+              <div class="menu-elements">
+                 <a href="https://www.bbc.com/news/world ">World</a>
+              </div>
+              
+              <div class="menu-elements">
+                 <a href="https://www.bbc.com/news/av/10462520 ">Video</a>
+              </div>
+              
+              <div class="menu-elements">
+                 <a href="https://www.bbc.com/news/stories ">Stories</a>
+              </div>
+              
+              <div class="menu-elements">
+                  <a href="https://www.bbc.com/news/world/asia ">Asia</a>
+              </div>
+              
+               <div class="menu-elements">
+                  <a href="https://www.bbc.com/news/uk ">UK</a>
+              </div>
+              
+               <div class="menu-elements">
+                <a href="https://www.bbc.com/news/business ">Business</a>
+              </div>
+              
+               <div class="menu-elements">
+                  <a href="https://www.bbc.com/news/technology ">Tech</a>
+              </div>
+              
+               <div class="menu-elements">
+                  <a href=" https://www.bbc.com/news/science_and_environment">Science</a>
+            </div>
+              </div>
+              </div>
+                  
+             <div class="clear"></div>    
+              
+        </div>
+        
+        
+        
+        <div id="page_container">
+            
+            
+            <div id="main-article">
+                
+                <h2 id="tech">Letsgrowmore</h2>
+                
+                <div id="article-container">
+                
+                <h2><a id="link" href="portfolio.html" target="blank">Tamil Selvan completed Task 1!</a></h2>
+                <div id="article-summary">
+                    
+                    <p>Tamil selvan coded this site using html and css.</p>
+                    
+                    <p style="margin-right: 40px;"><img id="clock" src="images/clockk.png"> 11 November 2021 <a href="https://www.linkedin.com/in/tamil-selvan-210384200/">linkedin</a></p>
+                    
+                 
+                </div> 
+                     <img id="port_img" src="images/portfolio_pic.jpg">
+                  
+                
+                   
+                    </div>
+                <div class="clear"></div>
+                 
+                
+                
+               
+            
+            </div>
+            
+         
+                 <div id="other">
+                   <p><a href="https://www.bbc.com/news/business-59243606">Musk sells $5bn of Tesla shares after Twitter pol</a><br><span class="time">27m | Bussiness</span> </p>
+                     
+                     
+                  <p> <a href="https://www.bbc.com/news/world-asia-china-59243836">Chinese city charts highest snowfall since 1905</a><br></bt><span class="time">5h | China</span></p>
+        <p> <a href="https://www.bbc.com/news/59233799">How much is still spent supporting fossil fuels</a><br><span class="time">6h | UK</span></p>
+                     
+        <p><a href="https://www.bbc.com/news/business-59150008">Should firms have to put carbon labels on all products?</a><br><br><span class="time">6h | US </span><br></p>
+                     
+        <p><a href="https://www.bbc.com/news/58160547">Is the UK on track to meet its climate targets?</a><br><span class="time">8h | UK</span></p>
+                </div>
+                
+                
+            
+            
+            </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+    
+                  
+          
+          
+              
+        
+        
+        
+        
+    
+    
+    
+    </body>
+
+
+
+
+
+
+
+
+</html>
